@@ -77,7 +77,8 @@ Este proyecto es parte de una práctica de la materia de Seguridad Informática.
 
 1. Después de realizar el inicio de sesión, verifica que los datos se hayan guardado en la base de datos en `ligon.sql`:
 
-    ```cat lugar en el que se guardo el repositorio/Pishing/sql/login.sql
+    ```
+    cat lugar en el que se guardo el repositorio/Pishing/sql/login.sql
     ```
 
 ## Estructura de Archivos
@@ -86,17 +87,28 @@ Asegúrate de que los archivos estén organizados de la siguiente manera:
 
 Phishing/
 │
+
 ├── index.html            # Página principal que imita una página de inicio de sesión
+
 ├── login.html            # La página real donde los usuarios ingresan sus credenciales
+
 ├── save_login.php        # Script PHP para guardar credenciales en un archivo .sql
+
 ├── styles.css            # Archivo CSS para estilizar las páginas HTML
+
 ├── sql/
+
 │   └── login.sql         # Archivo donde se almacenan las credenciales (creado manualmente)
+
 ├── img/
 │   ├── logo.png          # Logo usado en las páginas
+
 │   ├── qr.svg            # Imagen para la opción de código QR
+
 │   ├── user.jpg          # Imagen de icono de usuario
+
 │   └── [otras imágenes]  # Imágenes adicionales (Facebook, Google, etc.)
+
 └── README.md             # Archivo con las instrucciones y documentación
 
 
